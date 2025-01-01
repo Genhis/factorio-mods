@@ -1,0 +1,7 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 2025-01-01
+  Major Features:
+    - Added copper construction robot entity.
+    - Added copper personal roboport and personal burner generator equipment.
+    - Added equipment grids to light armor and heavy armor.

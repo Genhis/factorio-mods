@@ -1,0 +1,11 @@
+{
+  "name": "copper-construction-robots",
+  "version": "0.1.0",
+  "title": "Copper construction robots",
+  "author": "Genhis",
+  "dependencies": [
+    "base >= 2.0.0"
+  ],
+  "description": "Early-game construction robots. They are quite slow and have limited reach, but they get the job done.",
+  "factorio_version": "2.0"
+}
