@@ -1,0 +1,5 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 2025-01-12
+  Major Features:
+    - Added a shortcut to show gun range of the controlled character or vehicle.
