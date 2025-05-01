@@ -2,6 +2,8 @@
 
 Adds early-game construction robots for people who like to build at scale since the very beginning. The robots are quite slow and have limited reach, but it's still an improvement over manual building of blueprinted layouts.
 
+The mod doesn't have any scripting performance overhead, it uses only built-in engine features.
+
 ## Features
 
 - Copper construction robot

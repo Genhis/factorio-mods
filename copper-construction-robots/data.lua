@@ -49,15 +49,15 @@ mod_util.set_icon_tint(item, tint)
 local entity = table.deepcopy(data.raw["construction-robot"]["construction-robot"])
 mod_util.iterate_recursive(entity, replace_entity_names)
 entity.icons = item.icons
-entity.energy_per_move = "5kJ"
-entity.energy_per_tick = "0.1kJ"
+entity.energy_per_move = "2kJ"
+entity.energy_per_tick = "0.04kJ"
 entity.factoriopedia_simulation = {
   init = [[
     game.simulation.camera_position = {0, -1}
     game.surfaces[1].create_entity{name = "early-construction-robot", position = {0, 0}}
   ]]
 }
-entity.max_energy = "1000kJ"
+entity.max_energy = "400kJ"
 entity.max_health = (entity.max_health or 10) / 2
 entity.max_speed = entity.speed
 
@@ -106,12 +106,12 @@ local equipment = table.deepcopy(data.raw["roboport-equipment"]["personal-robopo
 equipment.name = "early-personal-roboport-equipment"
 equipment.localised_description = {"item-description.personal-roboport-equipment"}
 equipment.categories = {"simple-armor"}
-equipment.charging_energy = "300kW"
+equipment.charging_energy = "120kW"
 equipment.construction_radius = 8
 equipment.energy_source = {
   type = "electric",
-  buffer_capacity = "10MJ",
-  input_flow_limit = "600kW",
+  buffer_capacity = "4MJ",
+  input_flow_limit = "240kW",
   usage_priority = "secondary-input",
 }
 equipment.recharging_animation = {
@@ -158,6 +158,7 @@ equipment.name = "burner-generator-equipment"
 equipment.localised_description = nil
 equipment.burner = {
   type = "burner",
+  effectivity = 0.4,
   emissions_per_minute = {pollution = 20},
   fuel_categories = {"chemical"},
   fuel_inventory_size = 2,
@@ -166,7 +167,7 @@ equipment.energy_source = {
   type = "electric",
   usage_priority = "secondary-output",
 }
-equipment.power = "600kW"
+equipment.power = "240kW"
 equipment.sprite = {
   filename = "__base__/graphics/icons/boiler.png",
   width = 64,

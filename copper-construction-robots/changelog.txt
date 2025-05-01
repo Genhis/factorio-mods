@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 2025-05-01
+  Balancing:
+    - Reduced all energy production and consumption by 2.5x and made personal burner generator 40% efficient.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 Date: 2025-01-01
   Major Features:
