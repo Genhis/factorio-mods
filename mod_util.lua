@@ -39,4 +39,12 @@ function mod_util.deepcopy_optional(parent, key)
   end
 end
 
+function mod_util.find(t, comparator)
+  for k, v in pairs(t) do
+    if comparator(v) then
+      return k
+    end
+  end
+end
+
 return mod_util

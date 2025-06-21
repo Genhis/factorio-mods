@@ -194,10 +194,6 @@ data:extend{
 }
 
 -- equipment grids
-for _, equipment_grid in pairs(data.raw["equipment-grid"]) do
-  table.insert(equipment_grid.equipment_categories, "simple-armor")
-end
-
 local icons = util.technology_icon_constant_equipment("__base__/graphics/technology/personal-roboport-equipment.png")
 icons[1].tint = tint
 data:extend{
@@ -208,14 +204,14 @@ data:extend{
   {
     type = "equipment-grid",
     name = "small-simple-equipment-grid",
-    equipment_categories = {"simple-armor"},
+    equipment_categories = {},
     width = 4,
     height = 2,
   },
   {
     type = "equipment-grid",
     name = "large-simple-equipment-grid",
-    equipment_categories = {"simple-armor"},
+    equipment_categories = {},
     width = 4,
     height = 4,
   },
