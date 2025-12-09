@@ -84,7 +84,7 @@ data:extend{
     enabled = false,
     energy_required = 2,
     ingredients = {
-      {type = "item", name = "copper-plate", amount = 10},
+      {type = "item", name = "copper-plate", amount = (mods["space-exploration"] and 5 or 10)}, -- balance to be ingredient of the default bot
       {type = "item", name = "electronic-circuit", amount = 2},
       {type = "item", name = "iron-gear-wheel", amount = 6},
     },
@@ -241,4 +241,18 @@ if mod_util.get_optional(settings.startup["even-modular-armor-grid"], "value") t
   local equipment_grid = data.raw["equipment-grid"]["small-equipment-grid"]
   mod_util.set_optional(equipment_grid, "width", 6)
   mod_util.set_optional(equipment_grid, "height", 4)
+end
+if mods["space-exploration"] then
+  data.raw.technology["early-personal-roboport-equipment"].prerequisites = { "electronics" }
+
+  data.raw.recipe["construction-robot"].ingredients = {
+    {type = "item", name = "early-construction-robot", amount = 1},
+    {type = "item", name = "flying-robot-frame", amount = 1},
+  } -- SE telescopic recipes
+  data.raw.recipe["burner-generator-equipment"].ingredients = {
+    {type = "item", name = "burner-turbine", amount = 1},
+    {type = "item", name = "copper-plate", amount = 20},
+    {type = "item", name = "iron-gear-wheel", amount = 8},
+    {type = "item", name = "iron-plate", amount = 20},
+  }
 end
