@@ -242,3 +242,5 @@ if mod_util.get_optional(settings.startup["even-modular-armor-grid"], "value") t
   mod_util.set_optional(equipment_grid, "width", 6)
   mod_util.set_optional(equipment_grid, "height", 4)
 end
+
+require("compatibility/aai-industry")

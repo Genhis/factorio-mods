@@ -11,3 +11,8 @@ The mod doesn't have any scripting performance overhead, it uses only built-in e
 - Personal burner generator (2x2)
 - Equipment grids for light armor (4x2) and heavy armor (4x4)
 - Modular armor grid size changed to 6x4 (optional)
+
+## Built-in mod compatibility
+
+- [AAI Industry](https://mods.factorio.com/mod/aai-industry)
+- [Modular Life](https://mods.factorio.com/mod/ModularLife)
