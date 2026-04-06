@@ -11,5 +11,4 @@ Adds a shortcut to toggle gun range visualization of the controlled character or
 
 ## Known issues
 
-- Entering a vehicle in ramote view while the visualization is active does not refresh it. (https://forums.factorio.com/118769)
 - Special [ammo types](https://lua-api.factorio.com/latest/prototypes/AmmoItemPrototype.html#ammo_type) based on source are not implemented (such as the flamethrower ammo which behaves differently for personal and vehicle flamethrower) - the visualization will only consider the default one.

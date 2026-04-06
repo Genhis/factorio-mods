@@ -72,11 +72,9 @@ function logic.get_color(data)
 end
 
 function logic.get_selected_gun(entity)
-  if entity.selected_gun_index == nil then
-    return nil
-  elseif entity.type == "car" or entity.type == "spider-vehicle" then
-    return {prototype = entity.prototype.indexed_guns[entity.selected_gun_index], quality = entity.quality}
-  elseif entity.type == "character" then
+  if entity.type == "car" or entity.type == "spider-vehicle" then
+    return entity.selected_gun_index ~= nil and {prototype = entity.prototype.indexed_guns[entity.selected_gun_index], quality = entity.quality}
+  elseif entity.type == "character" and entity.selected_gun_index ~= nil then
     local item_stack = entity.get_inventory(defines.inventory.character_guns)[entity.selected_gun_index]
     return item_stack.valid_for_read and {prototype = item_stack.prototype, quality = item_stack.quality} or cache.gun_empty
   end

@@ -1,8 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+Date: 2026-04-06
+  Bugfixes:
+    - Fixed a crash when entering a rolling stock with the visualization active. (https://github.com/Genhis/factorio-mods/issues/10)
+---------------------------------------------------------------------------------------------------
 Version: 0.1.1
 Date: 2025-05-04
   Bugfixes:
-    - Fixed a crash when activating the visualization in a vehicle with no guns.
+    - Fixed a crash when activating the visualization in a vehicle with no guns. (https://github.com/Genhis/factorio-mods/issues/3)
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 Date: 2025-01-12
