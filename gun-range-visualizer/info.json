@@ -1,12 +1,12 @@
 {
   "name": "gun-range-visualizer",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "title": "Gun range visualizer",
   "author": "Genhis",
   "dependencies": [
-    "base >= 2.0.0"
+    "base >= 2.1.0"
   ],
   "description": "Adds a shortcut to show gun range of the controlled character or vehicle.",
-  "factorio_version": "2.0",
+  "factorio_version": "2.1",
   "homepage": "https://github.com/Genhis/factorio-mods"
 }
